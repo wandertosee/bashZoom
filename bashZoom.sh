@@ -1,16 +1,16 @@
 #!/bin/bash
 
-	# =============================================
+	# ===================================================
 	#
 	#		bashZoom.sh
 	#
 	# 		vips batch process
 	#
-	# 		deepzoom / microsoft sea dragon image
+	# 		deepzoom / microsoft sea dragon image tiles
 	#
 	#		Colin Kennedy 2014
 	#
-	# =============================================
+	# ===================================================
 	#
 	# 	REQUIRES VIPS
 	#
@@ -36,7 +36,8 @@
 	 
 	MakeDeepZoom () {
 
-		# IGNORE ROOT FOLDER "."	
+		# IGNORE ROOT FOLDER "."
+		# PROCESS SUB FOLDERS	
 		if [ $FOLDER != "." ] 
 		then
 			cd "$FOLDER";
