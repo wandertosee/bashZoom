@@ -50,4 +50,6 @@
 	
 	CWD="$(pwd)"
 	
-	for FOLDER in `find . -type d -maxdepth 1 | sed "s/[ ]/\ /g"`; do MakeDeepZoom; done;
+	IFS=$'\n'
+
+	for FOLDER in `find . -type d -maxdepth 1`; do MakeDeepZoom; done;
